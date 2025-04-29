@@ -1,0 +1,606 @@
+*{
+    font-family: "Inter", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a , p , h2 , h1 , h2 , h3{
+    color: #000;
+}
+
+.anhetacox{
+    display: initial;
+}
+.haytnvox{
+    display: none;
+}
+.container{
+    padding-left: 160px;
+    padding-top: 35px;
+    padding-bottom:35px ;
+    padding-right: 160px;
+} 
+
+.active{
+    color: #000;
+}
+.btn-active{
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+body{
+    color: #fff;
+    height: 100vh;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.preview2{
+    display: none;
+}
+
+#i-active{
+    fill: #FF0000;
+}
+
+.haytnvox{
+    display: none;
+}
+
+.border-active{
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+.wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .burger{
+    cursor: pointer;
+    display: none;
+}
+
+header .search-bar .content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .search-bar .content {
+    background-color: #F5F5F5;
+    padding-left: 10px;
+}
+
+header .search-bar .content input{
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+}
+
+header .navbar{
+    display: flex;
+    gap: 52px;
+}
+
+header .navbar li a:not(.active){
+    color: rgb(150, 150, 150);
+    transition: color .3s ease;
+}
+
+header .navbar li a:hover{
+    color: #000;
+}
+
+header .user ul{
+    gap: 24px;
+    display: flex;
+}
+.step{
+    display: flex;
+    justify-content: space-between;
+}
+h2.active{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+p.active{
+    font-size: 19px;
+    font-weight: 500;
+    color: #000;
+}
+.step .box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step .box h2:not(.active){
+    font-size: 14px;
+    font-weight: 500;
+    color: #B2B2B2;
+}
+.step .box p:not(.active){
+    font-size: 19px;
+    font-weight: 500;
+    color: #B2B2B2;
+}
+.shipment{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.shipment .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D1D8;
+    border-radius: 11px;
+}
+.date{
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.date h2.active{
+    font-size: 16px;
+    font-weight: 500;
+    color: #17183B;
+}
+.date h2{
+    color: #A2A3B1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.shipment .box{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.shipment .box h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.shipment .box h2 span{
+    font-weight: 500;
+}
+.shipment .box h2 span:not(.active){
+    font-size: 16px;
+    font-weight: 400;
+    color: #A2A3B1;
+}
+.shipment .box h2:not(.active){
+    font-size: 16px;
+    font-weight: 400;
+    color: #A2A3B1;
+}
+.buttons{
+    margin-top: 200px;
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+}
+.buttons button.next{
+    padding:24px 86px;
+    background: #000;
+    border: none;
+    border-radius: 6px;
+}
+.buttons button:not(.next){
+    padding:24px 86px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+.buttons button:not(.next) a{
+    color: #000;
+}
+.buttons button.next a{
+    color: #fff;
+}
+footer{
+    background: #000;
+    margin-top: 100px;
+}
+footer h2{
+    color: #9F9F9F;
+}
+footer .wrapper .box .social{
+    margin-top: 185px;
+    display: flex;
+    gap: 35px;
+}
+
+.social2-haytnvox{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    display: none;
+}
+
+footer .wrapper .box ul:not(.social){
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+}
+
+footer .wrapper .box ul li a{
+    color: #CFCFCF;
+}
+
+footer .wrapper .box p{
+    color: #CFCFCF;
+}
+
+footer .wrapper .box h2{
+    margin-bottom: 8px;
+}
+
+footer .wrapper {
+    padding-top: 105px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+@media (max-width:768px){
+    .wrapper{
+        max-width: 100%;
+    }
+    .social2-haytnvox{
+        display: initial;
+        display: flex;
+    }
+    .haytnvox{
+        display: initial;
+    }
+    .container{
+        padding: 0px  16px 0px 16px;
+    }
+    .anhetacox{
+        display: none;
+    }
+    
+    .container{
+        padding: 0px 16px 0px 16px ;
+    }
+    header .wrapper{
+        max-width: 100%;
+    }
+    header .container{
+        padding: 24px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .burger{
+        display: initial;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .user{
+        display: none;
+    }
+    .box.anhetacox{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        gap: 25px;
+    }
+    .buttons button.next{
+        padding: 24px 60px;
+    }
+    .buttons button:not(.next){
+        padding: 24px 60px;
+    }
+    .shipment .box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    footer .wrapper .box .social{
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width:992) {
+    .wrapper{
+        max-width: 100%;
+    }
+    .social2-haytnvox{
+        display: initial;
+        display: flex;
+    }
+    .haytnvox{
+        display: initial;
+    }
+    .container{
+        padding: 0px  16px 0px 16px;
+    }
+    .anhetacox{
+        display: none;
+    }
+    
+    .container{
+        padding: 0px 16px 0px 16px ;
+    }
+    header .wrapper{
+        max-width: 100%;
+    }
+    header .container{
+        padding: 24px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .burger{
+        display: initial;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .user{
+        display: none;
+    }
+    .box.anhetacox{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        gap: 25px;
+    }
+    .buttons button.next{
+        padding: 24px 60px;
+    }
+    .buttons button:not(.next){
+        padding: 24px 60px;
+    }
+    .shipment .box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    footer .wrapper .box .social{
+        display: none;
+    }
+}
+@media (min-width:992px) and (max-width:1024) {
+    .wrapper{
+        max-width: 100%;
+    }
+    .social2-haytnvox{
+        display: initial;
+        display: flex;
+    }
+    .haytnvox{
+        display: initial;
+    }
+    .container{
+        padding: 0px  16px 0px 16px;
+    }
+    .anhetacox{
+        display: none;
+    }
+    
+    .container{
+        padding: 0px 16px 0px 16px ;
+    }
+    header .wrapper{
+        max-width: 100%;
+    }
+    header .container{
+        padding: 24px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .burger{
+        display: initial;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .user{
+        display: none;
+    }
+    .box.anhetacox{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        gap: 25px;
+    }
+    .buttons button.next{
+        padding: 24px 60px;
+    }
+    .buttons button:not(.next){
+        padding: 24px 60px;
+    }
+    .shipment .box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    footer .wrapper .box .social{
+        display: none;
+    }
+}
+@media (min-width:1024px) and (max-width:1200) {
+    .wrapper{
+        max-width: 100%;
+    }
+    .social2-haytnvox{
+        display: initial;
+        display: flex;
+    }
+    .haytnvox{
+        display: initial;
+    }
+    .container{
+        padding: 0px  16px 0px 16px;
+    }
+    .anhetacox{
+        display: none;
+    }
+    
+    .container{
+        padding: 0px 16px 0px 16px ;
+    }
+    header .wrapper{
+        max-width: 100%;
+    }
+    header .container{
+        padding: 24px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .burger{
+        display: initial;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .user{
+        display: none;
+    }
+    .box.anhetacox{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        gap: 25px;
+    }
+    .buttons button.next{
+        padding: 24px 60px;
+    }
+    .buttons button:not(.next){
+        padding: 24px 60px;
+    }
+    .shipment .box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    footer .wrapper .box .social{
+        display: none;
+    }
+}
+@media (min-width:1200px) and (max-width:1400px) {
+    .wrapper{
+        max-width: 100%;
+    }
+    .social2-haytnvox{
+        display: initial;
+        display: flex;
+    }
+    .haytnvox{
+        display: initial;
+    }
+    .container{
+        padding: 0px  16px 0px 16px;
+    }
+    .anhetacox{
+        display: none;
+    }
+    
+    .container{
+        padding: 0px 16px 0px 16px ;
+    }
+    header .wrapper{
+        max-width: 100%;
+    }
+    header .container{
+        padding: 24px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container .burger{
+        display: initial;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .navbar{
+        display: none;
+    }
+    header .user{
+        display: none;
+    }
+    .box.anhetacox{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        gap: 25px;
+    }
+    .buttons button.next{
+        padding: 24px 60px;
+    }
+    .buttons button:not(.next){
+        padding: 24px 60px;
+    }
+    .shipment .box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    footer .wrapper .box .social{
+        display: none;
+    }
+}
